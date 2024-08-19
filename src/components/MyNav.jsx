@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsGearFill } from 'react-icons/bs'
 import { FaMailBulk } from 'react-icons/fa'
-import { GiFullFolder, GiOpenBook } from 'react-icons/gi'
+import { GiFullFolder, GiRoundStar } from 'react-icons/gi'
 
 const MyNav = () => {
   return (
@@ -9,9 +9,9 @@ const MyNav = () => {
       <Row className="border-nav rounded text-center color flex align-items-center">
         <Col className="border-nav-end border-nav-end flex justify-content-center align-items-center my-2 ">
           <div>
-            <GiOpenBook />
+            <GiRoundStar />
           </div>
-          <div className="d-none d-md-block">Formazione</div>
+          <div className="d-none d-md-block">Chi Sono</div>
         </Col>
 
         <Col className="border-nav-end flex m-1">

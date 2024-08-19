@@ -23,18 +23,11 @@ const Cover = () => {
             presso EPICODE.🌐​🛠️
           </p>
           <p>
-            ❤️ il mondo tech💻 soprattutto i video games. 🎮
-            <br />
-            ❤️ la "pop culture"📺 e la "Japan culture" 🎎, il fantasy🧙‍♂️, giocare
-            ai giochi di ruolo🎲, costruire LEGO 🧱 e puzzles🧩, leggere 📚,
-            ascoltare musica 🎶, cucire🧵e indossare i miei cosplay.👗
-          </p>
-          <p>
-            👥​Offro serietà, puntualità, impegno e voglia di imparare e
-            migliorarmi. Nel lavoro metto sempre tutta me stessa, mi piace
-            lavorare in team e confrontarmi con gli altri. Mi integro bene con i
-            team e sono sempre disposta ad aiutare se ne sono in grado e penso
-            di poter aggiungere un qualcosa in più con la persona che
+            👥Sono una persona seria, puntuale, mi impegno e ho sempre voglia di
+            imparare e migliorarmi. Nel lavoro metto sempre tutta me stessa, mi
+            piace lavorare in team e confrontarmi con gli altri. Mi integro bene
+            con i team e sono sempre disposta ad aiutare se ne sono in grado e
+            penso di poter aggiungere un qualcosa in più con la persona che
             sono.🤝​💼​
           </p>{' '}
           <p>
