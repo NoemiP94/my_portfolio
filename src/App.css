@@ -21,6 +21,16 @@ body {
   
 }
 
+.border-cover {
+  border: 1.5px dashed #8a6d48;
+}
+
+button {
+  background-color: #ddc79c!important;
+  border: 1.5px dashed #8a6d48!important;
+  color: #8a6d48!important;
+}
+
 
 
 
