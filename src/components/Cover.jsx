@@ -3,7 +3,7 @@ import { MdOutlineFileDownload } from 'react-icons/md'
 
 const Cover = () => {
   return (
-    <Container className="mt-4 ">
+    <Container className="my-5 ">
       <Row className="flex flex-column flex-lg-row border-cover p-2 ">
         <Col className="col-12 col-lg-4 flex flex-column text-center my-2 justify-content-center align-items-center ">
           <div>img</div>
