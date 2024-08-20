@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa'
 
 const Contacts = () => {
   return (
-    <Container className="my-5 ">
+    <Container className="my-5 " id="contacts">
       <Row className="border-cover p-2 d-flex flex-column">
         <Col className="color fw-bold fs-3 ">Contatti</Col>
         <Col className="mt-3">

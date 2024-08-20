@@ -3,30 +3,25 @@ import museum from '../../assets/museum.png'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
 
-const Museum = () => {
+const Genshin = () => {
   return (
     <Container className="my-5 ">
       <Row className="border-cover p-2 flex flex-column">
         <Col className="color text-center fw-bold fs-2">
-          <p>Museo della Memoria Mineraria</p>
-          <p>- Su Zurfuru -</p>
+          <p>Genshin World</p>
         </Col>
         <Col className="d-flex justify-content-center">
           <img src={museum} className="w-75" />
         </Col>
         <Col className="mt-5">
           <p>
-            Questo progetto è stato sviluppato come Capstone Project del corso
-            Full Stack Developer di Epicode.
+            Questa applicazione è basata sul famoso videogioco action RPG
+            Genshin Impact.
           </p>
           <p>
-            Questa applicazione permette agli utenti di visualizzare le
-            principali informazioni sul Museo della Memoria Mineraria di Su
-            Zurfuru. Inoltre, gli utenti possono accedere alle ultime notizie
-            attraverso un blog e visualizzare gli eventi disponibili per la
-            prenotazione. Il blog, gli eventi e le prenotazioni sono tutti
-            elementi gestibili da un&apos;area riservata utilizzando un account
-            Admin.
+            L&apos;utente, dopo l&apos;accesso, può inserire i vari dati sui
+            personaggi, equipaggiamenti, boss, mondo di gioco e molto altro.
+            Inoltre è possibile gestire un blog.
           </p>
         </Col>
         <Col>
@@ -38,11 +33,12 @@ const Museum = () => {
           <p>Front-end:</p>
           <ul>
             <li>ReactJs</li>
+            <li>TailwindCSS</li>
           </ul>
         </Col>
         <Col>
           <Link
-            to="https://github.com/NoemiP94/Capstone_fe/tree/main"
+            to="https://github.com/NoemiP94/genshin-world"
             className="text-decoration-none color fw-bold p-2 d-flex align-items-center"
           >
             <FaGithub className="me-2" />
@@ -59,4 +55,4 @@ const Museum = () => {
   )
 }
 
-export default Museum
+export default Genshin
