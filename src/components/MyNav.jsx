@@ -5,29 +5,29 @@ import { GiFullFolder, GiRoundStar } from 'react-icons/gi'
 
 const MyNav = () => {
   return (
-    <Container>
-      <Row className="border-nav rounded text-center color flex align-items-center">
-        <Col className="border-nav-end border-nav-end flex justify-content-center align-items-center my-2 ">
+    <Container className="mt-5">
+      <Row className="border-nav rounded text-center color d-flex align-items-center">
+        <Col className="border-nav-end d-flex flex-column m-1 p-2">
           <div>
             <GiRoundStar />
           </div>
           <div className="d-none d-md-block">Chi Sono</div>
         </Col>
 
-        <Col className="border-nav-end flex m-1">
+        <Col className="border-nav-end d-flex flex-column m-1 p-2">
           <div>
             <BsGearFill />
           </div>
           <div className="d-none d-md-block">Tech Skills</div>
         </Col>
-        <Col className="border-nav-end flex m-1">
+        <Col className="border-nav-end d-flex flex-column m-1 p-2">
           {' '}
           <div>
             <GiFullFolder />
           </div>
           <div className="d-none d-md-block">Progetti</div>
         </Col>
-        <Col className=" flex m-1">
+        <Col className=" d-flex flex-column m-1 p-2">
           {' '}
           <div>
             <FaMailBulk />
