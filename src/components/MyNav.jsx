@@ -9,28 +9,28 @@ const MyNav = () => {
       <Row className="border-nav rounded text-center color d-flex align-items-center">
         <Col className="border-nav-end d-flex flex-column m-1 p-2">
           <div>
-            <GiRoundStar />
+            <GiRoundStar className="fs-1" />
           </div>
           <div className="d-none d-md-block">Chi Sono</div>
         </Col>
 
         <Col className="border-nav-end d-flex flex-column m-1 p-2">
           <div>
-            <BsGearFill />
+            <BsGearFill className="fs-1" />
           </div>
           <div className="d-none d-md-block">Tech Skills</div>
         </Col>
         <Col className="border-nav-end d-flex flex-column m-1 p-2">
           {' '}
           <div>
-            <GiFullFolder />
+            <GiFullFolder className="fs-1" />
           </div>
           <div className="d-none d-md-block">Progetti</div>
         </Col>
         <Col className=" d-flex flex-column m-1 p-2">
           {' '}
           <div>
-            <FaMailBulk />
+            <FaMailBulk className="fs-1" />
           </div>
           <div className="d-none d-md-block">Contatti</div>
         </Col>
