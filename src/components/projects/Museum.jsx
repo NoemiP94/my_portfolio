@@ -28,6 +28,7 @@ const Museum = () => {
             elementi gestibili da un&apos;area riservata utilizzando un account
             Admin.
           </p>
+          <p className="color fw-bold">Responsive</p>
         </Col>
         <Col>
           <p>Back-end:</p>
@@ -38,6 +39,8 @@ const Museum = () => {
           <p>Front-end:</p>
           <ul>
             <li>ReactJs</li>
+            <li>Redux</li>
+            <li>Bootstrap</li>
           </ul>
         </Col>
         <Col>
@@ -49,7 +52,7 @@ const Museum = () => {
             Vai alla repository{' '}
           </Link>
         </Col>
-        <Button className="w-25 m-3">
+        <Button className="w-50 m-3">
           <Link to={'/'} className="text-decoration-none color">
             Indietro
           </Link>

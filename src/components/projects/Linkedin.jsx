@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import museum from '../../assets/museum.png'
+import linkedin from '../../assets/linkedin.png'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
 
@@ -11,15 +11,25 @@ const Linkedin = () => {
           <p>Linkedin Clone</p>
         </Col>
         <Col className="d-flex justify-content-center">
-          <img src={museum} className="w-75" />
+          <img src={linkedin} className="w-75" />
         </Col>
         <Col className="mt-5">
-          <p>descrizione</p>
+          <p>
+            Applicazione realizzata in team durante la terza Build Week del
+            corso di Epicode
+          </p>
+          <p>
+            Si tratta della riproduzione nella gran parte delle sue funzionalità
+            della famosa piattaforma per la ricerca del lavoro Linkedin.
+          </p>
+
+          <p className="color fw-bold">Responsive</p>
         </Col>
         <Col>
           <p>Front-end:</p>
           <ul>
             <li>ReactJs</li>
+            <li>Redux</li>
             <li>Bootstrap</li>
           </ul>
         </Col>
@@ -32,7 +42,7 @@ const Linkedin = () => {
             Vai alla repository{' '}
           </Link>
         </Col>
-        <Button className="w-25 m-3">
+        <Button className="w-50 m-3">
           <Link to={'/'} className="text-decoration-none color">
             Indietro
           </Link>

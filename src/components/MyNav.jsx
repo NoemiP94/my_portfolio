@@ -2,59 +2,46 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { BsGearFill } from 'react-icons/bs'
 import { FaMailBulk } from 'react-icons/fa'
 import { GiFullFolder, GiRoundStar } from 'react-icons/gi'
-import { Link } from 'react-router-dom'
 
 const MyNav = () => {
   return (
     <Container className="mt-5">
       <Row className="border-nav rounded text-center color d-flex align-items-center">
         <Col className="border-nav-end d-flex flex-column m-1 p-2">
-          <Link
-            className="d-none d-md-block text-decoration-none color"
-            href="#me"
-          >
+          <a className=" text-decoration-none color" href="#me">
             <div>
               <GiRoundStar className="fs-1" />
             </div>
-            Chi Sono
-          </Link>
+            <div className="d-none d-md-block">Chi Sono</div>
+          </a>
         </Col>
 
         <Col className="border-nav-end d-flex flex-column m-1 p-2">
-          <Link
-            className="d-none d-md-block text-decoration-none color"
-            href="#tech"
-          >
+          <a className="text-decoration-none color" href="#tech">
             {' '}
             <div>
               <BsGearFill className="fs-1" />
             </div>
-            Tech Skills
-          </Link>
+            <div className="d-none d-md-block ">Tech Skills</div>
+          </a>
         </Col>
         <Col className="border-nav-end d-flex flex-column m-1 p-2">
-          <Link
-            className="d-none d-md-block text-decoration-none color"
-            href="#projects"
-          >
+          <a className="text-decoration-none color" href="#projects">
             {' '}
             <div>
               <GiFullFolder className="fs-1" />
             </div>
-            Progetti
-          </Link>
+            <div className="d-none d-md-block ">Progetti</div>
+          </a>
         </Col>
         <Col className=" d-flex flex-column m-1 p-2">
           {' '}
-          <Link
-            className="d-none d-md-block text-decoration-none color"
-            href="#contacts"
-          >
+          <a className="text-decoration-none color" href="#contacts">
             <div>
               <FaMailBulk className="fs-1" />
             </div>
-            Contatti
-          </Link>
+            <div className="d-none d-md-block ">Contatti</div>
+          </a>
         </Col>
       </Row>
     </Container>

@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import museum from '../../assets/museum.png'
+import weather from '../../assets/weather.png'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
 
@@ -11,10 +11,15 @@ const Weather = () => {
           <p>Weather App</p>
         </Col>
         <Col className="d-flex justify-content-center">
-          <img src={museum} className="w-75" />
+          <img src={weather} className="w-75" />
         </Col>
         <Col className="mt-5">
-          <p>descrizione</p>
+          <p>
+            Applicazione che permette la visualizzazione delle previsioni
+            meteorologiche.
+          </p>
+          <p>Per la realizzazione ho utilizzato una API esterna.</p>
+          <p className="color fw-bold">Responsive</p>
         </Col>
         <Col>
           <p>Front-end:</p>
@@ -32,7 +37,7 @@ const Weather = () => {
             Vai alla repository{' '}
           </Link>
         </Col>
-        <Button className="w-25 m-3">
+        <Button className="w-50 m-3">
           <Link to={'/'} className="text-decoration-none color">
             Indietro
           </Link>

@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
-import museum from '../../assets/museum.png'
+import genshin from '../../assets/genshin.png'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
 
@@ -11,7 +11,7 @@ const Genshin = () => {
           <p>Genshin World</p>
         </Col>
         <Col className="d-flex justify-content-center">
-          <img src={museum} className="w-75" />
+          <img src={genshin} className="w-75" />
         </Col>
         <Col className="mt-5">
           <p>
@@ -33,6 +33,7 @@ const Genshin = () => {
           <p>Front-end:</p>
           <ul>
             <li>ReactJs</li>
+            <li>Redux</li>
             <li>TailwindCSS</li>
           </ul>
         </Col>
@@ -45,7 +46,7 @@ const Genshin = () => {
             Vai alla repository{' '}
           </Link>
         </Col>
-        <Button className="w-25 m-3">
+        <Button className="w-50 m-3">
           <Link to={'/'} className="text-decoration-none color">
             Indietro
           </Link>
