@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { MdOutlineFileDownload } from 'react-icons/md'
-import me from '../assets/me.gif'
+// import me from '../assets/me.gif'
 
 const Cover = () => {
   return (
@@ -8,7 +8,7 @@ const Cover = () => {
       <Row className="d-flex flex-column flex-lg-row border-cover p-2 ">
         <Col className="col-12 col-lg-4 d-flex flex-column text-center my-2 justify-content-center align-items-center ">
           <div className="my-4">
-            <img src={me} alt="" className="w-full" />
+            {/* <img src={me} alt="" className="w-full" /> */}
           </div>
           <div>
             <Button>
