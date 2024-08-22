@@ -1,22 +1,30 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { MdOutlineFileDownload } from 'react-icons/md'
-// import me from '../assets/me.gif'
+import me from '../assets/me.png'
+import cv from '../assets/noemi_pusceddu_cv.pdf'
 
 const Cover = () => {
   return (
     <Container className="my-5 " id="me">
       <Row className="d-flex flex-column flex-lg-row border-cover p-2 ">
-        <Col className="col-12 col-lg-4 d-flex flex-column text-center my-2 justify-content-center align-items-center ">
-          <div className="my-4">
-            {/* <img src={me} alt="" className="w-full" /> */}
+        <Col className="col-12 col-lg-4 d-flex flex-column text-center my-2 justify-content-around align-items-center ">
+          <div className="my-4 ">
+            <img src={me} alt="" className="w-75 rounded" />
           </div>
           <div>
             <Button>
-              Download CV <MdOutlineFileDownload className="color" />
+              <a
+                href={cv}
+                className="text-decoration-none color"
+                download="noemi_pusceddu_cv.pdf"
+              >
+                {' '}
+                Download CV <MdOutlineFileDownload className="color" />
+              </a>
             </Button>
           </div>
         </Col>
-        <Col className="col-12 col-lg-8 my-1">
+        <Col className="col-12 col-lg-8 d-flex flex-column justify-content-center ">
           <p>
             Sono una giovane Full Stack Developer:
             <br />
