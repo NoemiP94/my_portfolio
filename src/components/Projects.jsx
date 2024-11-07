@@ -73,7 +73,9 @@ const Projects = () => {
           <Card style={{ width: '18rem' }} className="custom-card m-2">
             <Card.Img variant="top" src={weather} />
             <Card.Body className="d-flex flex-column justify-content-end">
-              <Card.Title className="my-2 text-center">Weather App</Card.Title>
+              <Card.Title className="my-2 text-center">
+                Weather Forecast
+              </Card.Title>
 
               <Button className="my-2">
                 <Link to={'/weather'} className="text-decoration-none color ">

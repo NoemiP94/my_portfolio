@@ -20,6 +20,7 @@ import spring from '../assets/icons/spring.png'
 import tailwind from '../assets/icons/tailwind.png'
 import ts from '../assets/icons/ts.png'
 import vscode from '../assets/icons/vscode.png'
+import angular from '../assets/icons/angular.png'
 
 const TechSkills = () => {
   return (
@@ -81,6 +82,10 @@ const TechSkills = () => {
                 <div className="d-flex flex-column align-items-center">
                   <img src={react} alt="react" className="w-75" />
                   <p>React</p>
+                </div>
+                <div className="d-flex flex-column align-items-center">
+                  <img src={angular} alt="tailwind" className="w-100 pb-3" />
+                  <p>Angular</p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src={redux} alt="redux" className="w-75" />

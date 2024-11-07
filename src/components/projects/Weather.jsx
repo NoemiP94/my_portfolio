@@ -8,7 +8,7 @@ const Weather = () => {
     <Container className="my-5 ">
       <Row className="border-cover p-2 flex flex-column">
         <Col className="color text-center fw-bold fs-2">
-          <p>Weather App</p>
+          <p>Weather Forecast</p>
         </Col>
         <Col className="d-flex justify-content-center">
           <img src={weather} className="w-75" />
@@ -24,13 +24,14 @@ const Weather = () => {
         <Col>
           <p>Front-end:</p>
           <ul>
-            <li>ReactJs</li>
-            <li>Bootstrap</li>
+            <li>Angular</li>
+            <li>Angular Material</li>
+            <li>TailwindCSS</li>
           </ul>
         </Col>
         <Col>
           <Link
-            to="https://github.com/NoemiP94/weather-app"
+            to="https://github.com/NoemiP94/weather-forecast"
             className="text-decoration-none color fw-bold p-2 d-flex align-items-center"
           >
             <FaGithub className="me-2" />
