@@ -9,6 +9,7 @@ import Genshin from './components/projects/Genshin'
 import Adventure from './components/projects/Adventure'
 import Linkedin from './components/projects/Linkedin'
 import Weather from './components/projects/Weather'
+import Dragonage from './components/projects/Dragonage'
 import Contacts from './components/Contacts'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="adventure" element={<Adventure />} />
             <Route path="linkedin" element={<Linkedin />} />
             <Route path="weather" element={<Weather />} />
+            <Route path="dragonage" element={<Dragonage />} />
             <Route path="contacts" element={<Contacts />} />
           </Routes>
         </Container>

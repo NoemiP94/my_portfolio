@@ -4,6 +4,7 @@ import genshin from '../assets/genshin.png'
 import adventure from '../assets/adventure1.png'
 import linkedin from '../assets/linkedin.png'
 import weather from '../assets/weather.png'
+import dragon from '../assets/dragonage1.png'
 import { Link } from 'react-router-dom'
 
 const Projects = () => {
@@ -79,6 +80,19 @@ const Projects = () => {
 
               <Button className="my-2">
                 <Link to={'/weather'} className="text-decoration-none color ">
+                  Dettagli
+                </Link>
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card style={{ width: '18rem' }} className="custom-card m-2">
+            <Card.Img variant="top" src={dragon} />
+            <Card.Body className="d-flex flex-column justify-content-end">
+              <Card.Title className="my-2 text-center">Dragon Age</Card.Title>
+
+              <Button className="my-2">
+                <Link to={'/dragonage'} className="text-decoration-none color ">
                   Dettagli
                 </Link>
               </Button>
