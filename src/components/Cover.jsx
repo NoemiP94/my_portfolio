@@ -52,10 +52,10 @@ const Cover = () => {
                 appresi studiando presso EPICODE.🌐​🛠️
               </p>
               <p>
-                👥 A lavora sono una persona seria e precisa, mi impegno e ho
-                sempre voglia di imparare e migliorarmi. Nel lavoro metto sempre
-                tutta me stessa, mi piace lavorare in team e confrontarmi con
-                gli altri. Mi integro bene con i team e sono sempre disposta ad
+                👥 Sono una persona seria e precisa, mi impegno e ho sempre
+                voglia di imparare e migliorarmi. Nel lavoro metto sempre tutta
+                me stessa, mi piace lavorare in team e confrontarmi con gli
+                altri. Mi integro bene con i team e sono sempre disposta ad
                 aiutare se ne sono in grado e penso di poter aggiungere un
                 qualcosa in più con la persona che sono.🤝​💼​
               </p>{' '}
