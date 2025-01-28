@@ -21,8 +21,10 @@ import tailwind from '../assets/icons/tailwind.png'
 import ts from '../assets/icons/ts.png'
 import vscode from '../assets/icons/vscode.png'
 import angular from '../assets/icons/angular.png'
+import { useLanguage } from './lang/LanguageProvider'
 
 const TechSkills = () => {
+  const { language } = useLanguage()
   return (
     <Container className="my-5 " id="tech">
       <Row className="border-cover p-2 d-flex flex-column">
@@ -91,10 +93,7 @@ const TechSkills = () => {
                   <img src={redux} alt="redux" className="w-75" />
                   <p>Redux</p>
                 </div>
-                <div className="d-flex flex-column align-items-center">
-                  <img src={vscode} alt="vscode" className="w-75" />
-                  <p>VSCode</p>
-                </div>
+
                 <div className="d-flex flex-column align-items-center">
                   <img src={boot} alt="bootstrap" className="w-75" />
                   <p>Bootstrap</p>
@@ -119,9 +118,14 @@ const TechSkills = () => {
             </Row>
           </Col>
           <Col>
-            <h3>Altri strumenti</h3>
+            {language === 'it' ? <h3>Altri strumenti</h3> : <h3>Other</h3>}
+
             <Row className="my-3 align-items-center text-center">
               <div className="d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center m-2">
+                <div className="d-flex flex-column align-items-center">
+                  <img src={vscode} alt="vscode" className="w-75" />
+                  <p>VSCode</p>
+                </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src={git} alt="git" className="w-75" />
                   <p>Git</p>
