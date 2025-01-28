@@ -6,18 +6,25 @@ import linkedin from '../assets/linkedin.png'
 import weather from '../assets/weather.png'
 import dragon from '../assets/dragonage1.png'
 import { Link } from 'react-router-dom'
+import { useLanguage } from './lang/LanguageProvider'
 
 const Projects = () => {
+  const { language } = useLanguage()
   return (
     <Container className="my-5 " id="projects">
       <Row className="border-cover p-2 flex flex-column">
-        <Col className="color fw-bold fs-3 ">Progetti</Col>
+        {language === 'it' ? (
+          <Col className="color fw-bold fs-3 ">Progetti</Col>
+        ) : (
+          <Col className="color fw-bold fs-3 ">Projects</Col>
+        )}
+
         <Col className="mt-2 d-flex flex-column flex-md-row  justify-content-center align-items-center align-items-md-stretch flex-md-wrap">
           <Card style={{ width: '18rem' }} className="custom-card m-2">
             <Card.Img variant="top" src={museum} />
             <Card.Body className="d-flex flex-column justify-content-end">
               <Card.Title className="my-2 text-center">
-                Museo Su Zurfuru
+                Su Zurfuru Museum
               </Card.Title>
               <Button className="my-2">
                 <Link to={'/museum'} className="text-decoration-none color ">

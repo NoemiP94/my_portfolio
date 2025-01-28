@@ -2,12 +2,19 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
+import { useLanguage } from './lang/LanguageProvider'
 
 const Contacts = () => {
+  const { language } = useLanguage()
   return (
     <Container className="my-5 " id="contacts">
       <Row className="border-cover p-2 d-flex flex-column">
-        <Col className="color fw-bold fs-3 ">Contatti</Col>
+        {language === 'it' ? (
+          <Col className="color fw-bold fs-3 ">Contatti</Col>
+        ) : (
+          <Col className="color fw-bold fs-3 ">Contacts</Col>
+        )}
+
         <Col className="mt-3">
           <div className="text-center d-flex align-items-center justify-content-center">
             <Link
@@ -24,8 +31,18 @@ const Contacts = () => {
             </Link>
           </div>
           <div className="text-center mt-3">
-            <p>Vuoi saperne di più?</p>
-            <p className="fw-bold">Mandami una mail!</p>
+            {language === 'it' ? (
+              <>
+                <p>Vuoi saperne di più?</p>
+                <p className="fw-bold">Mandami una mail!</p>
+              </>
+            ) : (
+              <>
+                <p>You want more info?</p>
+                <p className="fw-bold">Send me a mail!</p>
+              </>
+            )}
+
             <p className="color fw-bold">m_emi94@hotmail.it</p>
           </div>
         </Col>
