@@ -63,6 +63,17 @@ button {
   }
 }
 
+.lang-button{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.lang-button:hover{
+  background-color: #ddc79c!important;
+  border-radius: 30% !important;
+}
+
+
 
 
 

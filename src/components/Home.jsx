@@ -5,10 +5,12 @@ import Projects from './Projects'
 import Contacts from './Contacts'
 import MyNav from './MyNav'
 import Footer from './Footer'
+import LanguageSwitcher from './lang/LanguageSwitcher'
 
 const Home = () => {
   return (
     <Container className="mt-4">
+      <LanguageSwitcher />
       <MyNav />
       <Cover />
       <TechSkills />

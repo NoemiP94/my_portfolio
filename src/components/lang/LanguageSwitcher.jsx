@@ -5,14 +5,14 @@ import { useLanguage } from './LanguageProvider'
 export const LanguageSwitcher = () => {
   const { language, switchLanguage } = useLanguage()
   return (
-    <div>
-      <button onClick={() => switchLanguage('it')}>
+    <div className="d-flex justify-content-end">
+      <button onClick={() => switchLanguage('it')} className="lang-button">
         <img src={ita} alt="Italiano" />
       </button>
-      <button onClick={() => switchLanguage('en')}>
+      <button onClick={() => switchLanguage('en')} className="lang-button">
         <img src={eng} alt="English" />
       </button>
-      <p>Lingua attuale: {language === 'it' ? 'Italiano' : 'English'}</p>
+      {/* <p>Lingua attuale: {language === 'it' ? 'Italiano' : 'English'}</p> */}
     </div>
   )
 }
