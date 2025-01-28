@@ -11,12 +11,15 @@ import Linkedin from './components/projects/Linkedin'
 import Weather from './components/projects/Weather'
 import Dragonage from './components/projects/Dragonage'
 import Contacts from './components/Contacts'
+import { LanguageProvider } from './components/lang/LanguageProvider'
+import LanguageSwitcher from './components/lang/LanguageSwitcher'
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <BrowserRouter>
         <Container>
+          <LanguageSwitcher />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="museum" element={<Museum />} />
@@ -29,7 +32,7 @@ function App() {
           </Routes>
         </Container>
       </BrowserRouter>
-    </>
+    </LanguageProvider>
   )
 }
 
