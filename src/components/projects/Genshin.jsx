@@ -2,8 +2,10 @@ import { Button, Col, Container, Row } from 'react-bootstrap'
 import genshin from '../../assets/genshin.png'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa'
+import { useLanguage } from '../lang/LanguageProvider'
 
 const Genshin = () => {
+  const { language } = useLanguage()
   return (
     <Container className="my-5 ">
       <Row className="border-cover p-2 flex flex-column">
@@ -13,17 +15,32 @@ const Genshin = () => {
         <Col className="d-flex justify-content-center">
           <img src={genshin} className="w-75" />
         </Col>
-        <Col className="mt-5">
-          <p>
-            Questa applicazione è basata sul famoso videogioco action RPG
-            Genshin Impact.
-          </p>
-          <p>
-            L&apos;utente, dopo l&apos;accesso, può inserire i vari dati sui
-            personaggi, equipaggiamenti, boss, mondo di gioco e molto altro.
-            Inoltre è possibile gestire un blog.
-          </p>
-        </Col>
+        {language === 'it' ? (
+          <Col className="mt-5">
+            <p>
+              Questa applicazione è basata sul famoso videogioco action RPG
+              Genshin Impact.
+            </p>
+            <p>
+              L&apos;utente, dopo l&apos;accesso, può inserire i vari dati sui
+              personaggi, equipaggiamenti, boss, mondo di gioco e molto altro.
+              Inoltre è possibile gestire un blog.
+            </p>
+          </Col>
+        ) : (
+          <Col className="mt-5">
+            <p>
+              This application was based on the famous action RPG videogame
+              Genshin Impact.
+            </p>
+            <p>
+              The user, after the log in, can add all datas about characters,
+              equipments, bosses, world game and more. Moreover is possible to
+              manage a blog.
+            </p>
+          </Col>
+        )}
+
         <Col>
           <p>Back-end:</p>
           <ul>
@@ -43,14 +60,22 @@ const Genshin = () => {
             className="text-decoration-none color fw-bold p-2 d-flex align-items-center"
           >
             <FaGithub className="me-2" />
-            Vai alla repository{' '}
+            GitHub Repository{' '}
           </Link>
         </Col>
-        <Button className="w-50 m-3">
-          <Link to={'/'} className="text-decoration-none color">
-            Indietro
-          </Link>
-        </Button>
+        {language === 'it' ? (
+          <Button className="w-50 m-3">
+            <Link to={'/'} className="text-decoration-none color">
+              Indietro
+            </Link>
+          </Button>
+        ) : (
+          <Button className="w-50 m-3">
+            <Link to={'/'} className="text-decoration-none color">
+              Back
+            </Link>
+          </Button>
+        )}
       </Row>
     </Container>
   )
