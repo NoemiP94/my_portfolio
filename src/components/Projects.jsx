@@ -26,11 +26,19 @@ const Projects = () => {
               <Card.Title className="my-2 text-center">
                 Su Zurfuru Museum
               </Card.Title>
-              <Button className="my-2">
-                <Link to={'/museum'} className="text-decoration-none color ">
-                  Dettagli
-                </Link>
-              </Button>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link to={'/museum'} className="text-decoration-none color ">
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link to={'/museum'} className="text-decoration-none color ">
+                    Details
+                  </Link>
+                </Button>
+              )}
             </Card.Body>
           </Card>
 
@@ -40,11 +48,19 @@ const Projects = () => {
               <Card.Title className="my-2 text-center">
                 Genshin World
               </Card.Title>
-              <Button className="my-2">
-                <Link to={'/genshin'} className="text-decoration-none color ">
-                  Dettagli
-                </Link>
-              </Button>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link to={'/genshin'} className="text-decoration-none color ">
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link to={'/genshin'} className="text-decoration-none color ">
+                    Details
+                  </Link>
+                </Button>
+              )}
             </Card.Body>
           </Card>
 
@@ -54,12 +70,25 @@ const Projects = () => {
               <Card.Title className="my-2 text-center">
                 Nika&apos;s Adventure
               </Card.Title>
-
-              <Button className="my-2">
-                <Link to={'/adventure'} className="text-decoration-none color ">
-                  Dettagli
-                </Link>
-              </Button>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link
+                    to={'/adventure'}
+                    className="text-decoration-none color "
+                  >
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link
+                    to={'/adventure'}
+                    className="text-decoration-none color "
+                  >
+                    Details
+                  </Link>
+                </Button>
+              )}
             </Card.Body>
           </Card>
 
@@ -69,12 +98,25 @@ const Projects = () => {
               <Card.Title className="my-2 text-center">
                 Linkedin Clone
               </Card.Title>
-
-              <Button className="my-2">
-                <Link to={'/linkedin'} className="text-decoration-none color ">
-                  Dettagli
-                </Link>
-              </Button>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link
+                    to={'/linkedin'}
+                    className="text-decoration-none color "
+                  >
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link
+                    to={'/linkedin'}
+                    className="text-decoration-none color "
+                  >
+                    Details
+                  </Link>
+                </Button>
+              )}
             </Card.Body>
           </Card>
 
@@ -84,12 +126,19 @@ const Projects = () => {
               <Card.Title className="my-2 text-center">
                 Weather Forecast
               </Card.Title>
-
-              <Button className="my-2">
-                <Link to={'/weather'} className="text-decoration-none color ">
-                  Dettagli
-                </Link>
-              </Button>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link to={'/weather'} className="text-decoration-none color ">
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link to={'/weather'} className="text-decoration-none color ">
+                    Details
+                  </Link>
+                </Button>
+              )}
             </Card.Body>
           </Card>
 
@@ -97,12 +146,25 @@ const Projects = () => {
             <Card.Img variant="top" src={dragon} />
             <Card.Body className="d-flex flex-column justify-content-end">
               <Card.Title className="my-2 text-center">Dragon Age</Card.Title>
-
-              <Button className="my-2">
-                <Link to={'/dragonage'} className="text-decoration-none color ">
-                  Dettagli
-                </Link>
-              </Button>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link
+                    to={'/dragonage'}
+                    className="text-decoration-none color "
+                  >
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link
+                    to={'/dragonage'}
+                    className="text-decoration-none color "
+                  >
+                    Details
+                  </Link>
+                </Button>
+              )}
             </Card.Body>
           </Card>
         </Col>
