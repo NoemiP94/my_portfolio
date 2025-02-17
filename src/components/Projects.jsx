@@ -5,6 +5,7 @@ import adventure from '../assets/adventure1.png'
 import linkedin from '../assets/linkedin.png'
 import weather from '../assets/weather.png'
 import dragon from '../assets/dragonage1.png'
+import drink from '../assets/drink.png'
 import { Link } from 'react-router-dom'
 import { useLanguage } from './lang/LanguageProvider'
 
@@ -159,6 +160,33 @@ const Projects = () => {
                 <Button className="my-2">
                   <Link
                     to={'/dragonage'}
+                    className="text-decoration-none color "
+                  >
+                    Details
+                  </Link>
+                </Button>
+              )}
+            </Card.Body>
+          </Card>
+          <Card style={{ width: '18rem' }} className="custom-card m-2">
+            <Card.Img variant="top" src={drink} />
+            <Card.Body className="d-flex flex-column justify-content-end">
+              <Card.Title className="my-2 text-center">
+                How to Cocktail
+              </Card.Title>
+              {language === 'it' ? (
+                <Button className="my-2">
+                  <Link
+                    to={'/cocktail'}
+                    className="text-decoration-none color "
+                  >
+                    Dettagli
+                  </Link>
+                </Button>
+              ) : (
+                <Button className="my-2">
+                  <Link
+                    to={'/cocktail'}
                     className="text-decoration-none color "
                   >
                     Details

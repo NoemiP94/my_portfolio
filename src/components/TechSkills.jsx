@@ -114,6 +114,10 @@ const TechSkills = () => {
                   <img src={tailwind} alt="tailwind" className="w-75" />
                   <p>TailwindCSS</p>
                 </div>
+                <div className="d-flex flex-column align-items-center">
+                  <img src={react} alt="react" className="w-75" />
+                  <p>React Native</p>
+                </div>
               </div>
             </Row>
           </Col>

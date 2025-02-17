@@ -11,6 +11,7 @@ import Linkedin from './components/projects/Linkedin'
 import Weather from './components/projects/Weather'
 import Dragonage from './components/projects/Dragonage'
 import Contacts from './components/Contacts'
+import HowToCocktail from './components/projects/HowToCocktail'
 import { LanguageProvider } from './components/lang/LanguageProvider'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="adventure" element={<Adventure />} />
             <Route path="linkedin" element={<Linkedin />} />
             <Route path="weather" element={<Weather />} />
+            <Route path="cocktail" element={<HowToCocktail />} />
             <Route path="dragonage" element={<Dragonage />} />
             <Route path="contacts" element={<Contacts />} />
           </Routes>
